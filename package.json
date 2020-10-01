@@ -6,7 +6,7 @@
 	"unity": "2020.1",
 	"unityRelease": "2f1",
 	"dependencies": {
-		"com.unity.inputsystem": ">=1.0.0"
+		"com.unity.inputsystem": "1.0.0"
 	},
 	"keywords": [
 		"system",
