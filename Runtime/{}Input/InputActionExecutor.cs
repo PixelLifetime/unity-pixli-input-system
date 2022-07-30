@@ -15,13 +15,13 @@ namespace PixLi
 	public abstract class InputActionExecutor<TInputAction> : MonoBehaviour
 	{
 		[SerializeField] protected UnityEvent<InputAction.CallbackContext> onActionStarted;
-		public UnityEvent<InputAction.CallbackContext> _OnActionStarted { get { return this.onActionStarted; } }
-		
+		public UnityEvent<InputAction.CallbackContext> _OnActionStarted => this.onActionStarted;
+
 		[SerializeField] protected UnityEvent<InputAction.CallbackContext> onActionPerformed;
-		public UnityEvent<InputAction.CallbackContext> _OnActionPerformed { get { return this.onActionPerformed; } }
-		
+		public UnityEvent<InputAction.CallbackContext> _OnActionPerformed => this.onActionPerformed;
+
 		[SerializeField] protected UnityEvent<InputAction.CallbackContext> onActionCanceled;
-		public UnityEvent<InputAction.CallbackContext> _OnActionCanceled { get { return this.onActionCanceled; } }
+		public UnityEvent<InputAction.CallbackContext> _OnActionCanceled => this.onActionCanceled;
 
 		[SerializeField] protected TInputAction inputAction;
 		public TInputAction _InputAction => this.inputAction;
